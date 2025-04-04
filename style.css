@@ -1,0 +1,499 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* ----- TOP BAR ----- */
+.top-bar,
+.bottom-bar {
+    background-color: #33ff33;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Estilos para la línea decorativa */
+.decorative-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+}
+
+.square {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #5aff5a;
+    background-color: transparent;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #5aff5a;
+}
+
+/* ----- NAVBAR ----- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: #33ff33;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ----- BUSCADOR Y CARRITO ----- */
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.buscador {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.carrito {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.contacto {
+    font-weight: bold;
+}
+
+/* ----- BANNER ----- */
+.banner {
+    background-color: black;
+    padding: 15em 0;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 3em;
+}
+
+/* ----- CTA (Botón "LET'S GO!") ----- */
+.cta {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    padding: 30px;
+    top: 6em;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(45deg, #33ff33, #00cc00);
+    transform: rotate(45deg);
+    position: relative;
+    box-shadow: 0 0 20px #33ff33, 0 0 40px #00cc00;
+    transition: 0.3s ease-in-out;
+}
+
+/* Corrige la orientación del texto dentro del rombo */
+.cta span {
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Efecto al pasar el mouse */
+.cta:hover {
+    box-shadow: 0 0 30px #33ff33, 0 0 60px #00cc00;
+    background: linear-gradient(45deg, #00ff00, #009900);
+}
+
+/* ----- FLECHAS ----- */
+.flecha {
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    color: #33ff33;
+    cursor: pointer;
+}
+
+.izquierda {
+    left: 10px;
+}
+
+.derecha {
+    right: 10px;
+}
+
+/* ----- Contenedor de botones de productos ----- */
+.product-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+/* ----- Contenedor de botones de productos ----- */
+.product-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+/* ----- Estilos para cada botón de producto ----- */
+.product-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    /* Aumentado */
+    height: 180px;
+    /* Aumentado */
+    background-color: rgba(34, 34, 34, 0.9);
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    /* Sutil efecto de sombra */
+}
+
+/* Imagen vacía dentro del botón */
+.product-img {
+    width: 120px;
+    /* Aumentado */
+    height: 120px;
+    /* Aumentado */
+    background-color: #222;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Texto dentro del botón */
+.product-btn p {
+    color: white;
+    font-size: 16px;
+    /* Más grande */
+    transition: 0.3s ease-in-out;
+    margin-top: 5px;
+}
+
+/* Efecto hover */
+.product-btn:hover p {
+    color: #33ff33;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/* Contenedor del título con posicionamiento relativo para las esquinas */
+.title-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el título */
+.seo-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 5vw; /* Tamaño responsivo */
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 40px 0;
+}
+
+/* Esquinas decorativas */
+.corner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 0;
+}
+
+/* Esquina superior izquierda */
+.top-left {
+    top: 0;
+    left: 0;
+    border-top: 2px solid #5aff5a;
+    border-left: 2px solid #5aff5a;
+}
+
+/* Esquina superior derecha */
+.top-right {
+    top: 0;
+    right: 0;
+    border-top: 2px solid #5aff5a;
+    border-right: 2px solid #5aff5a;
+}
+
+/* Esquina inferior izquierda */
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #5aff5a;
+    border-left: 2px solid #5aff5a;
+}
+
+/* Esquina inferior derecha */
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid #5aff5a;
+    border-right: 2px solid #5aff5a;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/* Fondo verde que cubre toda la pantalla */
+.containerVERDE {
+    background-color: #5aff5a;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Filas */
+.top-row, .bottom-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Tarjetas base */
+.card {
+    background-color: #222; /* Fondo oscuro para las tarjetas */
+    border-radius: 15px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tamaños de tarjetas */
+.card-large {
+    flex: 2; /* 2/3 del ancho disponible */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-medium {
+    flex: 1; /* 1/3 del ancho disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-small {
+    flex: 1; /* Distribuye el espacio equitativamente */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Estilos de contenido */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.title {
+    color: #5aff5a; /* Texto verde */
+    font-size: 24px;
+}
+
+.description {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Placeholders para imágenes */
+.image-placeholder {
+    background-color: #333;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+}
+
+.card-large .image-placeholder {
+    width: 40%;
+    height: 250px;
+}
+
+.card-small .image-placeholder {
+    height: 150px;
+    flex-grow: 1;
+}
+
+/* Botones */
+button {
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.button-green {
+    background-color: #5aff5a;
+    color: black;
+}
+
+.button-outline {
+    background-color: transparent;
+    color: #5aff5a;
+    border: 2px solid #5aff5a;
+}
+
+/* Hover effects */
+.button-green:hover {
+    background-color: #2ba82b;
+}
+
+.button-outline:hover {
+    background-color: rgba(50, 218, 50, 0.1);
+}
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+.title-container-NEGRO {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el título */
+.seo-title-NEGRO {
+    font-family: 'Playfair Display', serif;
+    font-size: 5vw; /* Tamaño responsivo */
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 40px 0;
+}
+
+/* Esquinas decorativas */
+.corner-NEGRO {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 0;
+}
+
+/* Esquina superior izquierda */
+.top-left-NEGRO {
+    top: 0;
+    left: 0;
+    border-top: 2px solid #5aff5a;
+    border-left: 2px solid #5aff5a;
+}
+
+/* Esquina superior derecha */
+.top-right-NEGRO {
+    top: 0;
+    right: 0;
+    border-top: 2px solid #5aff5a;
+    border-right: 2px solid #5aff5a;
+}
+
+/* Esquina inferior izquierda */
+.bottom-left-NEGRO {
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #5aff5a;
+    border-left: 2px solid #5aff5a;
+}
+
+/* Esquina inferior derecha */
+.bottom-right-NEGRO {
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid #5aff5a;
+    border-right: 2px solid #5aff5a;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+.contenedorLogos{
+    background-color: white;
+}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logos{
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+}
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+.logos-slide{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+.logos-slide img{
+    height: 150px;
+    margin: 0 40px;
+}
