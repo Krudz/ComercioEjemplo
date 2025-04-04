@@ -408,6 +408,11 @@ button {
 
 /*----------------------------------------------------------------------------------------------------------*/
 
+.contenedorTitulo-NEGRO{
+    background-color: #5aff5a;
+    width: 100%;
+    padding: 1px 0;
+}
 .title-container-NEGRO {
     position: relative;
     width: 100%;
@@ -440,32 +445,32 @@ button {
 .top-left-NEGRO {
     top: 0;
     left: 0;
-    border-top: 2px solid #5aff5a;
-    border-left: 2px solid #5aff5a;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
 }
 
 /* Esquina superior derecha */
 .top-right-NEGRO {
     top: 0;
     right: 0;
-    border-top: 2px solid #5aff5a;
-    border-right: 2px solid #5aff5a;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
 }
 
 /* Esquina inferior izquierda */
 .bottom-left-NEGRO {
     bottom: 0;
     left: 0;
-    border-bottom: 2px solid #5aff5a;
-    border-left: 2px solid #5aff5a;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
 }
 
 /* Esquina inferior derecha */
 .bottom-right-NEGRO {
     bottom: 0;
     right: 0;
-    border-bottom: 2px solid #5aff5a;
-    border-right: 2px solid #5aff5a;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------*/
